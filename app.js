@@ -22,22 +22,22 @@ const middleware2 = function (req, res, next) {
 
 
 
-app.get("/", middleware, function (req, res) {
+app.get("/hello", middleware, function (req, res) {
   console.log("Merhaba, GET isteği attınız");
   res.json("Nodejs Restapi Basic Example");
 });
 
-app.put("/", middleware, function (req, res) {
+app.put("/hello", middleware, function (req, res) {
   console.log("Merhaba, PUT isteği attınız");
   res.json("Nodejs Restapi Basic Example");
 });
 
-app.post("/", middleware, middleware2, function (req, res) {
+app.post("/hello", middleware, middleware2, function (req, res) {
   console.log("Merhaba, POST isteği attınız");
   res.json("Nodejs Restapi Basic Example");
 });
 
-app.delete("/", middleware, function (req, res) {
+app.delete("/hello", middleware, function (req, res) {
   console.log("Merhaba, delete isteği attınız");
   res.json("Nodejs Restapi Basic Example");
 });
